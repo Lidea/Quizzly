@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quizzly</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div id="header">
+		<div class="railsgirls_logo">  
+			<%= image_tag "railsgirls-logo.png"%>
+		</div>
+    </div>
+
+<div id="container">
+
+
+
+<%= yield %>
+
+
+	
+
+</div>
+
+    <div id="footer">
+    	<div class="firma">Delia</div>
+    </div>
+
+</body>
+</html>
